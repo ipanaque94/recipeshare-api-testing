@@ -4,7 +4,7 @@
 > RecipeShare (Supabase) aplicando técnicas ISTQB.
 > Modelo de datos normalizado probado por capas.
 
-**Stack:** Java 11 · Rest Assured 5.4 · TestNG · Allure  
+**Stack:** Java 17 · Rest Assured 5.4 · TestNG · Allure  
 **API:** Supabase REST API + Auth v1  
 **QA:** Enoc Isaac Ipanaque Rodas
 
@@ -18,7 +18,7 @@ Descubrí que RecipeShare usa un modelo normalizado:
 una receta no es un solo endpoint — son 4 tablas
 separadas que hay que orquestar en orden.
 
-Eso me enseñó algo que ningún tutorial enseña:
+Eso me enseñó algo importante:
 **automatizar sin entender el modelo de datos
 produce tests que pasan pero no prueban nada real.**
 
@@ -33,18 +33,6 @@ produce tests que pasan pero no prueban nada real.**
    en API y cuáles eran responsabilidad de la UI
 4. Separé los errores del código de los bugs reales
    del sistema — son cosas distintas
-
----
-
-## Arquitectura del proyecto
-
-config/    → configuración centralizada (1 lugar para cambiar)
-base/      → login automático + specs reutilizables de Supabase
-auth/      → tests de autenticación por historia de usuario
-perfil/    → tests de edición de perfil con BVA
-recetas/   → flujo normalizado en 5 pasos con dependsOnMethods
-
----
 
 ## Decisiones técnicas profesionales
 
@@ -104,9 +92,9 @@ mvn allure:serve
 
 ---
 
-## Próximo paso
+## Ver Automatización en UI
 
-Mismos TC automatizados en la capa UI con
+TC automatizados en la capa UI con
 Selenium + Cucumber BDD.
 
 [Ver proyecto UI →](https://github.com/ipanaque94/recipeshare-ui-testing)
