@@ -89,6 +89,8 @@ mvn clean test
 # Ver reporte visual Allure
 mvn allure:serve
 ```
+<img width="1338" height="677" alt="Captura de pantalla 2026-05-11 145226" src="https://github.com/user-attachments/assets/bf1e2566-591e-4053-9bf7-f4f36cc979c1" />
+<img width="1343" height="672" alt="Captura de pantalla 2026-05-11 145314" src="https://github.com/user-attachments/assets/942e0341-4058-4fca-92d7-9feccf31f9a0" />
 
 ---
 
