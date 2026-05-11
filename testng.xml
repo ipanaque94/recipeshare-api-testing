@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="RecipeShare — API Testing Suite"
+       verbose="1"
+       parallel="false">
+
+    <test name="EP-A — Autenticación y Cuenta">
+        <classes>
+            <class name="com.recipeshare.auth.RegistroTest"/>
+            <class name="com.recipeshare.auth.LoginTest"/>
+            <class name="com.recipeshare.auth.LogoutTest"/>
+        </classes>
+    </test>
+
+    <test name="EP-B — Perfil de Usuario">
+        <classes>
+            <class name="com.recipeshare.perfil.EditarPerfilTest"/>
+        </classes>
+    </test>
+
+    <test name="EP-C — Gestión de Recetas">
+        <classes>
+            <class name="com.recipeshare.recetas.CrearRecetaTest"/>
+            <class name="com.recipeshare.recetas.VerDetalleTest"/>
+            <class name="com.recipeshare.recetas.EditarRecetaTest"/>
+        </classes>
+    </test>
+
+    <listeners>
+        <listener class-name="io.qameta.allure.testng.AllureTestNg"/>
+    </listeners>
+
+</suite>

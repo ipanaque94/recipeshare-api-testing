@@ -1,0 +1,45 @@
+<div>POST to https://raxaijrqmlruunamdwtz.supabase.co/rest/v1/recipe_steps</div>
+
+<h4>Body</h4>
+<div>
+    <pre class="preformated-text">
+[
+    {
+        &quot;recipe_id&quot;: &quot;20adf47b-a771-4d40-b4f0-42294ba688bc&quot;,
+        &quot;step_number&quot;: 1,
+        &quot;description&quot;: &quot;Cortar la carne en tiras&quot;
+    },
+    {
+        &quot;recipe_id&quot;: &quot;20adf47b-a771-4d40-b4f0-42294ba688bc&quot;,
+        &quot;step_number&quot;: 2,
+        &quot;description&quot;: &quot;Saltear con ajo y sillao&quot;
+    }
+]    </pre>
+</div>
+
+<h4>Headers</h4>
+<div>
+        <div>Authorization: Bearer eyJhbGciOiJIUzI1NiIsImtpZCI6IlNKenB0eGR2dGZLVExHY2wiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3JheGFpanJxbWxydXVuYW1kd3R6LnN1cGFiYXNlLmNvL2F1dGgvdjEiLCJzdWIiOiI4YzhlZmJmYS02ZmQyLTRlYWQtYTg0Zi1lMDg0M2NlMGQxZWQiLCJhdWQiOiJhdXRoZW50aWNhdGVkIiwiZXhwIjoxNzc4MTcxNjg4LCJpYXQiOjE3NzgxNjgwODgsImVtYWlsIjoibmV3dXNlckB0ZXN0LmNvbSIsInBob25lIjoiIiwiYXBwX21ldGFkYXRhIjp7InByb3ZpZGVyIjoiZW1haWwiLCJwcm92aWRlcnMiOlsiZW1haWwiXX0sInVzZXJfbWV0YWRhdGEiOnsiZW1haWwiOiJuZXd1c2VyQHRlc3QuY29tIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsImZ1bGxfbmFtZSI6IlByaW5jZSBpcGFuYXF1ZSIsInBob25lX3ZlcmlmaWVkIjpmYWxzZSwic3ViIjoiOGM4ZWZiZmEtNmZkMi00ZWFkLWE4NGYtZTA4NDNjZTBkMWVkIiwidXNlcm5hbWUiOiJQcmluY2UxIn0sInJvbGUiOiJhdXRoZW50aWNhdGVkIiwiYWFsIjoiYWFsMSIsImFtciI6W3sibWV0aG9kIjoicGFzc3dvcmQiLCJ0aW1lc3RhbXAiOjE3NzgxNjgwODh9XSwic2Vzc2lvbl9pZCI6ImU5YjRjYmUyLTVhNzAtNGYyOS05YTc1LTFiNTEzMzNkNTJmMyIsImlzX2Fub255bW91cyI6ZmFsc2V9.g3TUEbpvmH5SpN_KP5wUqS56dC5yUruvGoI8WeHf8h4</div>
+        <div>Prefer: return=representation</div>
+        <div>apikey: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InJheGFpanJxbWxydXVuYW1kd3R6Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTkzMzA4MzgsImV4cCI6MjA3NDkwNjgzOH0.jCpTHq2Q1pCODXWmI3mLsIfwesEmxl5egwktGcU-03Y</div>
+        <div>Accept: */*</div>
+        <div>Content-Type: application/json</div>
+</div>
+
+
+
+<h4>Curl</h4>
+<div>
+curl -v -X POST &#39;https://raxaijrqmlruunamdwtz.supabase.co/rest/v1/recipe_steps&#39; -H &#39;Authorization: Bearer eyJhbGciOiJIUzI1NiIsImtpZCI6IlNKenB0eGR2dGZLVExHY2wiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3JheGFpanJxbWxydXVuYW1kd3R6LnN1cGFiYXNlLmNvL2F1dGgvdjEiLCJzdWIiOiI4YzhlZmJmYS02ZmQyLTRlYWQtYTg0Zi1lMDg0M2NlMGQxZWQiLCJhdWQiOiJhdXRoZW50aWNhdGVkIiwiZXhwIjoxNzc4MTcxNjg4LCJpYXQiOjE3NzgxNjgwODgsImVtYWlsIjoibmV3dXNlckB0ZXN0LmNvbSIsInBob25lIjoiIiwiYXBwX21ldGFkYXRhIjp7InByb3ZpZGVyIjoiZW1haWwiLCJwcm92aWRlcnMiOlsiZW1haWwiXX0sInVzZXJfbWV0YWRhdGEiOnsiZW1haWwiOiJuZXd1c2VyQHRlc3QuY29tIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsImZ1bGxfbmFtZSI6IlByaW5jZSBpcGFuYXF1ZSIsInBob25lX3ZlcmlmaWVkIjpmYWxzZSwic3ViIjoiOGM4ZWZiZmEtNmZkMi00ZWFkLWE4NGYtZTA4NDNjZTBkMWVkIiwidXNlcm5hbWUiOiJQcmluY2UxIn0sInJvbGUiOiJhdXRoZW50aWNhdGVkIiwiYWFsIjoiYWFsMSIsImFtciI6W3sibWV0aG9kIjoicGFzc3dvcmQiLCJ0aW1lc3RhbXAiOjE3NzgxNjgwODh9XSwic2Vzc2lvbl9pZCI6ImU5YjRjYmUyLTVhNzAtNGYyOS05YTc1LTFiNTEzMzNkNTJmMyIsImlzX2Fub255bW91cyI6ZmFsc2V9.g3TUEbpvmH5SpN_KP5wUqS56dC5yUruvGoI8WeHf8h4&#39; -H &#39;Prefer: return=representation&#39; -H &#39;apikey: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InJheGFpanJxbWxydXVuYW1kd3R6Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTkzMzA4MzgsImV4cCI6MjA3NDkwNjgzOH0.jCpTHq2Q1pCODXWmI3mLsIfwesEmxl5egwktGcU-03Y&#39; -H &#39;Accept: */*&#39; -H &#39;Content-Type: application/json&#39; -d &#39;[
+    {
+        &quot;recipe_id&quot;: &quot;20adf47b-a771-4d40-b4f0-42294ba688bc&quot;,
+        &quot;step_number&quot;: 1,
+        &quot;description&quot;: &quot;Cortar la carne en tiras&quot;
+    },
+    {
+        &quot;recipe_id&quot;: &quot;20adf47b-a771-4d40-b4f0-42294ba688bc&quot;,
+        &quot;step_number&quot;: 2,
+        &quot;description&quot;: &quot;Saltear con ajo y sillao&quot;
+    }
+]&#39;
+</div>
